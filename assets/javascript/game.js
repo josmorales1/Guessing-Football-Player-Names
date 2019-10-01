@@ -1,4 +1,4 @@
-var soccerPlayers = ["RONALDO", "NEYMAR", "RAMOS", "POGBA",];
+var soccerPlayers = ["RONALDO", "NEYMAR", "RAMOS", "POGBA", "DELLI", "KANE"];
 var totalGuesses = 9;       // number of tries
 var userGuesses = [];       // letters the user guessed
 var computerPick;           // array number the machine choose randomly
@@ -25,7 +25,11 @@ function startGame() {
     }else if(soccerPlayers[computerPick] == soccerPlayers[2]) {
         $('.clue').html("<img src='assets/images/neymar.jpg' width='300'/>");
     }else if(soccerPlayers[computerPick] == soccerPlayers[3]) {
-        $('.clue').html("<img src='assets/images/ramos.jg' width='300'/>");
+        $('.clue').html("<img src='assets/images/ramos.jpeg' width='300'/>");
+    }else if (soccerPlayers[computerPick]== soccerPlayers[4]){
+        $('.clue').html("<img src='assets/images/delli.jpg' width='300'/>");
+    }else if (soccerPlayers[computerPick]== soccerPlayers[5]){
+        $('.clue').html("<img src='assets/images/kane.jpeg' width='300'/>");
     }
 
     // Clear out arrays
